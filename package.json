@@ -1,0 +1,33 @@
+{
+  "name": "api-france",
+  "version": "0.0.1",
+  "description": "",
+  "author": "FredRX",
+  "license": "MIT",
+  "keywords": [
+    "Javascript",
+    "SQL"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install && bash ./bash/.env.sh && clear",
+    "packages": "npm install express dotenv mysql2 && npm install nodemon --save-dev",
+    "bash": "bash ./bash/.env.sh && bash ./bash/.gitignore.sh && clear"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fred-rx/api-france.git"
+  },
+  "homepage": "https://github.com/fred-rx/api-france#readme",
+  "bugs": {
+    "url": "https://github.com/fred-rx/api-france/issues"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mysql2": "^3.11.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
