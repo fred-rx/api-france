@@ -10,9 +10,11 @@
   ],
   "main": "index.js",
   "scripts": {
-    "start": "npm install && bash ./bash/.env.sh && clear",
+    "bash": "bash ./bash/.env.sh && bash ./bash/.gitignore.sh && clear",
+    "config": "node ./server/config.js",
+    "dev": "nodemon index.js",
     "packages": "npm install express dotenv mysql2 && npm install nodemon --save-dev",
-    "bash": "bash ./bash/.env.sh && bash ./bash/.gitignore.sh && clear"
+    "start": "npm install && bash ./bash/.env.sh && clear"
   },
   "repository": {
     "type": "git",
